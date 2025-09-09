@@ -1,0 +1,11 @@
+name: My workflow
+on: push
+jobs:
+    unit-testing:
+        name: Unit Testing
+        runs-on: ubuntu-latest
+        steps:
+        - name: Checkout Repository
+          uses: actions/checkout@v4    
+        - name: list
+          run: ls
