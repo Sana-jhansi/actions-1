@@ -6,9 +6,10 @@ jobs:
         steps:
         - name: Checkout Repository
           uses: actions/checkout@v4
-        - name: Welcome Message
-          run: echo "My first Github actions 200"  
-        - name: list
-          run: ls
-        - name: Show readme file
-          run: cat README.md
+        - name: list and read files
+          run: |
+           echo "My firts github project"
+           ls -ltra
+           cat README.md
+        
+          
